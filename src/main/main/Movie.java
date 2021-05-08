@@ -1,3 +1,10 @@
+package main;
+
+import Prices.ChildrensPrice;
+import Prices.NewReleasePrice;
+import Prices.Price;
+import Prices.RegularPrice;
+
 public class Movie {
 
     public static final int CHILDREN = 2;
@@ -28,7 +35,7 @@ public class Movie {
                 price = new NewReleasePrice();
                 break;
             default:
-                throw new IllegalArgumentException("Incorrect Price Code");
+                throw new IllegalArgumentException("Incorrect Prices.Price Code");
         }
     }
 

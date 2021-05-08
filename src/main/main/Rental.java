@@ -1,4 +1,6 @@
-class Rental {
+package main;
+
+public class Rental {
 
     private final Movie movie;
     private final int daysRented;
