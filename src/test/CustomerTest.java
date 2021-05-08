@@ -12,7 +12,7 @@ class CustomerTest {
     @BeforeEach
     void setUp() {
         customer = new Customer("Movie Renter");
-        movie = new Movie("Don't watch me", Movie.CHILDRENS);
+        movie = new Movie("Don't watch me", Movie.CHILDREN);
         rental = new Rental(movie, 7);
 
         customer.addRental(rental);

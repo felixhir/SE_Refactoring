@@ -1,7 +1,7 @@
 public class ChildrensPrice extends Price {
 
     int getPriceCode() {
-        return Movie.CHILDRENS;
+        return Movie.CHILDREN;
     }
 
     @Override
