@@ -1,9 +1,9 @@
 package main;
 
-import Prices.ChildrensPrice;
-import Prices.NewReleasePrice;
-import Prices.Price;
-import Prices.RegularPrice;
+import prices.ChildrensPrice;
+import prices.NewReleasePrice;
+import prices.Price;
+import prices.RegularPrice;
 
 public class Movie {
 
@@ -35,7 +35,7 @@ public class Movie {
                 price = new NewReleasePrice();
                 break;
             default:
-                throw new IllegalArgumentException("Incorrect Prices.Price Code");
+                throw new IllegalArgumentException("Incorrect prices.Price Code");
         }
     }
 

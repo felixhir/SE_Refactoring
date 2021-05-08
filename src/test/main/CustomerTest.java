@@ -1,16 +1,18 @@
+package main;
+
 import main.Customer;
 import main.Movie;
 import main.Rental;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CustomerTest {
 
-    Customer customer;
-    Rental rental;
-    Movie movie;
+    private Customer customer;
+    private Rental rental;
+    private Movie movie;
 
     @BeforeEach
     void setUp() {

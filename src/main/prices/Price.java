@@ -1,4 +1,4 @@
-package Prices;
+package prices;
 
 abstract public class Price {
     public abstract int getPriceCode();

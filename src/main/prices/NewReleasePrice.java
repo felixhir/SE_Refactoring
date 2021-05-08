@@ -1,4 +1,4 @@
-package Prices;
+package prices;
 
 import main.Movie;
 
