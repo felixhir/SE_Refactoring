@@ -35,4 +35,14 @@ class CustomerTest {
 
         assertEquals(expected, customer.statement());
     }
+
+    @Test
+    void htmlStatement() {
+        String expected = "<H1>Rentals for <EM>Movie Renter</EM></H1><P>\n" +
+                "Don't watch me: 7.5<BR>\n" +
+                "<P>You owe <EM>7.5</EM><P>\n" +
+                "On this rental you earned <EM>1</EM> frequent renter points<P>";
+
+        assertEquals(expected, customer.htmlStatement());
+    }
 }
