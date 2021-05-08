@@ -1,8 +1,5 @@
 package main;
 
-import main.Customer;
-import main.Movie;
-import main.Rental;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,14 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CustomerTest {
 
     private Customer customer;
-    private Rental rental;
-    private Movie movie;
 
     @BeforeEach
     void setUp() {
         customer = new Customer("main.Movie Renter");
-        movie = new Movie("Don't watch me", Movie.CHILDREN);
-        rental = new Rental(movie, 7);
+        Movie movie = new Movie("Don't watch me", Movie.CHILDREN);
+        Rental rental = new Rental(movie, 7);
 
         customer.addRental(rental);
     }
